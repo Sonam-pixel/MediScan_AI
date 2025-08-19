@@ -1,0 +1,178 @@
+/* Modern Dark Neon Theme with Animations */
+
+body {
+  background: linear-gradient(
+                rgba(18, 24, 48, 0.85),
+                rgba(18, 24, 48, 0.85)
+              ), url('https://www.citymed.com.au/wp-content/uploads/2020/02/blog3-1.webp') center/cover no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  animation: backgroundFadeIn 1.5s ease forwards;
+}
+
+@keyframes backgroundFadeIn {
+  from { opacity: 0.7; }
+  to { opacity: 1; }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(18, 24, 48, 0.95);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 20px rgba(110, 231, 183, 0.3);
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ... rest of your styles ... */
+
+/* Loader Spinner */
+.loader {
+  border: 4px solid rgba(255,255,255,0.2);
+  border-top: 4px solid #6ee7b7;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+/* Smooth gradient animation */
+@keyframes backgroundMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: rgba(18, 24, 48, 0.95);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 0px 20px rgba(110, 231, 183, 0.3);
+  animation: fadeInUp 1s ease;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #6ee7b7;
+  text-align: center;
+  font-size: 2.2rem;
+  text-shadow: 0 0 15px rgba(110, 231, 183, 0.8);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #6ee7b7; }
+  to { text-shadow: 0 0 20px #34d399; }
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: #9aa3b2;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+textarea, input[type="text"] {
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: #1e2a4a;
+  color: #fff;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+textarea:focus, input[type="text"]:focus {
+  box-shadow: 0 0 10px #6ee7b7;
+  transform: scale(1.02);
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: #1e2a4a;
+  color: #9aa3b2;
+  cursor: pointer;
+}
+
+button {
+  background: linear-gradient(90deg, #6ee7b7, #34d399);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  color: #0b1020;
+  font-size: 1rem;
+  box-shadow: 0 0 12px rgba(110, 231, 183, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(90deg, #34d399, #6ee7b7);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(110, 231, 183, 0.7);
+}
+
+#results {
+  margin-top: 20px;
+  background: #1e2a4a;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px rgba(110, 231, 183, 0.3);
+  animation: fadeInUp 1.2s ease;
+}
+
+#saveTokenBtn {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6); /* blue instead of green */
+  color: #fff;
+}
+
+#saveTokenBtn:hover {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
