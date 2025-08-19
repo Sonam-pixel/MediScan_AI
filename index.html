@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediScan AI – Smart Health Report Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 MediScan AI</h1>
+    <p class="tagline">Smart Health Report Analyzer</p>
+
+    <div class="input-section">
+      <input type="file" id="fileInput" accept="image/*">
+      <button id="ocrBtn">Extract Text</button>
+      <button id="sampleBtn">🧪 Paste Sample Text</button>
+    </div>
+
+    <textarea id="extractedText" placeholder="Extracted report text will appear here..."></textarea>
+
+    <div class="api-section">
+      <input type="text" id="hfToken" placeholder="Enter Hugging Face API Token">
+      <button id="saveTokenBtn">Save Locally</button>
+      <button id="summarizeBtn">Summarize Report</button>
+      <input type="text" id="userQuestion" placeholder="Ask a question about the report">
+      <button id="askBtn">Ask</button>
+    </div>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
